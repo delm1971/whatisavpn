@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DNS Leak Test | WhatIsAVPN.org</title>
+
+<style>
+body{
+font-family:Arial;
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+button{
+background:#2563eb;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+#results{
+margin-top:20px;
+padding:20px;
+background:#f5f5f5;
+border-radius:8px;
+}
+
+.vpn-btn{
+display:inline-block;
+padding:12px 24px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>DNS Leak Test</h1>
+
+<p>
+Check whether your internet connection is exposing DNS requests outside your VPN.
+</p>
+
+<button onclick="runTest()">Run DNS Leak Test</button>
+
+<div id="results"></div>
+
+<div style="margin-top:30px">
+
+<h2>Protect Your DNS Privacy</h2>
+
+<p>
+A VPN can help prevent DNS leaks and protect your browsing activity.
+</p>
+
+<a href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=142232&url_id=2078"
+target="_blank"
+rel="nofollow sponsored noopener noreferrer"
+class="vpn-btn">
+Get NordVPN
+</a>
+
+</div>
+
+<script>
+
+function runTest(){
+
+document.getElementById('results').innerHTML =
+"<strong>DNS Test Initiated</strong><br><br>" +
+"To perform a complete DNS leak test you should integrate a DNS testing API " +
+"or use a service that returns detected DNS resolvers.";
+
+}
+
+</script>
+
+</body>
+</html>
